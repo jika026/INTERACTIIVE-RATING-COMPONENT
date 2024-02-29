@@ -1,0 +1,148 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: "Overpass", sans-serif;
+}
+.container {
+  max-width: 450px;
+  height: max-content;
+  background-color: hsl(216, 12%, 8%);
+  padding: 2rem;
+  border-radius: 32px;
+}
+.star {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.star img {
+  width: 25px;
+  height: 25px;
+}
+.head {
+  margin-bottom: 1rem;
+}
+.head h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 32px;
+}
+.appreciation {
+  margin-bottom: 2rem;
+}
+.appreciation p {
+  color: hsl(217, 12%, 63%);
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.rates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.rates > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213, 19%, 18%);
+}
+.rates > div:hover {
+  cursor: pointer;
+  background-color: hsl(217, 12%, 63%);
+}
+.rates > div > p {
+  color: hsl(217, 12%, 63%);
+  font-size: 20px;
+  font-weight: 400;
+  z-index: 100;
+}
+.submit {
+  width: 100%;
+  border-radius: 42px;
+  padding: 1rem;
+  background-color: hsl(25, 97%, 53%);
+}
+.submit a {
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+.rates > div.rate-active {
+  background-color: hsl(25, 97%, 53%);
+}
+.selection {
+  background-color: hsl(213, 19%, 18%);
+}
+.selection p {
+  font-size: 16px;
+  color: hsl(25, 97%, 53%);
+}
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 568px) {
+  .container {
+    margin: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .head h1 {
+    font-size: 24px;
+  }
+  .appreciation p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .rates > div {
+    width: 30px;
+    height: 30px;
+  }
+  .rates > div > p {
+    font-size: 14px;
+  }
+  .submit a {
+    font-size: 14px;
+  }
+  .submit {
+    border-radius: 36px;
+    padding: 0.75rem;
+  }
+  .star {
+    width: 40px;
+    height: 40px;
+  }
+  .star img {
+    width: 20px;
+    height: 20px;
+  }
+}
